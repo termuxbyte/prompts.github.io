@@ -1,20 +1,28 @@
 /* Estilo general */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #ecdddd;
-  background-color: #0c0c14;
-   margin: 0 30px; /* ajusta el valor del margen según tus necesidades */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente o tipo de letra para el contenido del elemento body. En este caso, se intentará usar 'Segoe UI', si no está disponible, se utilizará 'Tahoma', luego 'Geneva', 'Verdana' y, por último, cualquier fuente sans-serif genérica. */
+  color: #ecdddd; /* Establece el color del texto dentro del elemento body en un tono de gris. */
+  background-color: #0c0c14; /* Establece el color de fondo del elemento body como un tono oscuro. */
+  margin: 0 5vw; /* Establece los márgenes superior e inferior del elemento body en 0 y los márgenes izquierdo y derecho en 30 píxeles. Ajusta el valor del margen según tus necesidades. */
+  border-top: 0.5vw solid #e49595; /* Establece una línea superior de borde en el elemento body con un grosor de 5 píxeles y un color rojizo. */
+  overflow-x: hidden; /* Oculta el desbordamiento horizontal del contenido dentro del elemento body. Es decir, si hay contenido que excede el ancho del elemento body, se ocultará. */
+}
 
-   border-top: 5px solid #e49595;
+* {     
+  
+  /* Esto Aplica a todo */
 
   
 
-  overflow-x: hidden;
+}
+
+@media (max-with: 1972px) {
+  html, body {
+    background-color: #63b119;
+  }
 }
 
 
-
-/* Estilo TITLE2*/
 
 .content2 {
   position: relative;
@@ -1066,6 +1074,11 @@ pre {
     flex-direction: row;
   }
 }
+@media (min-width: 775px) {
+  .container8 {
+    flex-direction: row;
+  }
+}
 .item {
   position: relative;
   flex: calc(100vw / 6) 1 1;
@@ -1084,21 +1097,12 @@ pre {
   border-bottom: 1px solid #ccc;
   animation: borderPulse 5s infinite;
 }
-@media (min-width: 1024px) {
-  .item:not(:last-child) {
-    border-right: 1px solid #ccc;
-    border-bottom: none;
-  }
-}
+
 .item:hover {
   flex-basis: 40%;
   filter: saturate(120%);
 }
-@media (min-width: 1024px) {
-  .item:hover {
-    flex-basis: 75%;
-  }
-}
+
 .item:hover .quote {
   opacity: 1;
   transform: translateX(0);
@@ -1137,20 +1141,9 @@ pre {
   transition: 1s;
   transform: translateX(50%);
 }
-@media (min-width: 512px) {
-  .quote {
-    left: 15%;
-    bottom: 35%;
-    width: 20vw;
-  }
-}
-@media (min-width: 1024px) {
-  .quote {
-    left: 15%;
-    bottom: 35%;
-    width: 30vw;
-  }
-}
+
+
+
 .quote p {
   position: relative;
   display: inline-block;
@@ -1324,7 +1317,7 @@ pre {
 
 
 
-@media (max-width: 880px) {
+@media (max-width: 1024px) {
 
 	.footer-distributed{
 		font: bold 14px sans-serif;
@@ -1418,12 +1411,12 @@ a:hover {
   padding-right: 0.2em;
   padding-bottom: 0.4em;
 }
-@media screen and (min-width: 40.063em) {
+@media screen and (min-width: 775px) {
   .grid {
-    float: left;
-    width: 33.333%;
+  float: left;
+  width: 33.333%;
   }
-}
+  }
 .card__image {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -1579,76 +1572,6 @@ ul#menu-topo li a {
 .nav-toggle {
   display: none;
 }
-
-@media screen and (max-width: 800px) {
-  body {
-    margin: 0;
-    
-  }
-  #post-body {
-    margin: 5%;
-  }
-  .nav-menu {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 12px;
-
-    background-color: #8b534c;
-
-    table-layout: fixed;
-  }
-  ul#menu-topo {
-    display: none;
-
-    width: 100%;
-    margin: 0;
-    padding: 0;
-
-    background-color: #8b534c;
-
-    table-layout: fixed;
-
-    transition: all .3s ease-in;
-  }
-  ul#menu-topo li {
-    display: block;
-
-    border-bottom: 1px solid #9a6760;
-
-    line-height: 3;
-    color: white;
-  }
-  #menu-topo li a {
-    color: white;
-  }
-  ul#menu-topo li.hide {
-    display: none !important;
-  }
-  #menu-topo li:hover {
-    border-bottom: 1px solid #c77336;
-    background-color: #c76926;
-  }
-  /****TOGGLE****/
-  .nav-toggle-label:before {
-    color: white;
-
-    content: '☰';
-  }
-  .nav-toggle:checked + ul#menu-topo {
-    display: table;
-
-    margin-left: 0;
-  }
-}
-
-
-
-
-
-
-
-
-
 
 
 
@@ -2264,7 +2187,6 @@ ul#menu-topo li a {
     height: 50px;
   }
   
-
 
 
 
