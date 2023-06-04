@@ -120,61 +120,7 @@
   width: 0;
  
 }
-/*
-* background
-*/
-.background {
-  position: absolute;
-  top: 0;
-  height: 100vh;
-  width: 0;
-  animation: background-animation 2s ease-in-out 4s 1 normal forwards;
-}
-.background0 {
-  left: 0%;
-  height: 100vh;
-  background-color: #eb4747;
-}
-.background1 {
-  left: 12.5%;
-  height: 100vh;
-  background-color: #ebc247;
-}
-.background2 {
-  left: 25%;
-  height: 100vh;
-  background-color: #99eb47;
-}
-.background3 {
-  left: 37.5%;
-  height: 100vh;
-  background-color: #47eb70;
-}
-.background4 {
-  left: 50%;
-  height: 100vh;
-  background-color: #47ebeb;
-}
-.background5 {
-  left: 62.5%;
-  height: 100vh;
-  background-color: #4770eb;
-}
-.background6 {
-  left: 75%;
-  height: 100vh;
-  background-color: #9947eb;
-}
-.background7 {
-  left: 87.5%;
-  height: 100vh;
-  background-color: #eb47c2;
-}
-.background8 {
-  left: 100%;
-  height: 100vh;
-  background-color: #eb4747;
-}
+
 /*
 * text
 */
@@ -9713,20 +9659,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Anton|Roboto');
 
 .word {
@@ -9860,3 +9792,5 @@ footer a {
 	color: #3C97BF;
 	text-decoration: none;
 }
+
+

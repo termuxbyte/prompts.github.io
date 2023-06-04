@@ -112,7 +112,7 @@
 .menu > ol .sub-menu li a:focus:after {
   width: 15px;
 }
-@media (min-width: 600px) {
+@media (min-width: 775px) {
   a:focus,
   a:hover {
     position: relative;
@@ -156,7 +156,7 @@
   .menu > ol > li:hover .sub-menu,
   .menu > ol > li:focus .sub-menu,
   .menu > ol > li:focus-within .sub-menu {
-    max-height: 750px;
+    max-height: 775px;
   }
   .menu > ol > li a:not(:last-child):before {
     right: 12.5px;
@@ -178,3 +178,5 @@
     right: 25px;
   }
 }
+
+

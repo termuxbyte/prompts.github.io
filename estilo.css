@@ -1,12 +1,24 @@
-/* Estilo general */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Establece la fuente o tipo de letra para el contenido del elemento body. En este caso, se intentará usar 'Segoe UI', si no está disponible, se utilizará 'Tahoma', luego 'Geneva', 'Verdana' y, por último, cualquier fuente sans-serif genérica. */
-  color: #ecdddd; /* Establece el color del texto dentro del elemento body en un tono de gris. */
-  background-color: #0c0c14; /* Establece el color de fondo del elemento body como un tono oscuro. */
-  margin: 0 5vw; /* Establece los márgenes superior e inferior del elemento body en 0 y los márgenes izquierdo y derecho en 30 píxeles. Ajusta el valor del margen según tus necesidades. */
-  border-top: 0.5vw solid #e49595; /* Establece una línea superior de borde en el elemento body con un grosor de 5 píxeles y un color rojizo. */
-  overflow-x: hidden; /* Oculta el desbordamiento horizontal del contenido dentro del elemento body. Es decir, si hay contenido que excede el ancho del elemento body, se ocultará. */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0c0c14;
+  margin: 0 5vw;
+  border-top: 1vw solid #e49595;
 }
+
+html {
+  background-color: #d49d12;
+  margin: 0;
+  border: none;
+  width: 100%;
+}
+
+@media (min-width: 775px) {
+  body {
+    background-color: #16b41b;
+  }
+}
+
+
 
 * {     
   
@@ -16,16 +28,12 @@ body {
 
 }
 
-@media (max-with: 1972px) {
-  html, body {
-    background-color: #63b119;
-  }
-}
 
 
 
 .content2 {
   position: relative;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -551,7 +559,7 @@ pre {
   
   .containerw {
     position: relative;
-    left: 435px;
+    left: 50px;
     top: 120px;
   }
 
@@ -796,7 +804,7 @@ pre {
 
 .typewriter  {
   font-family: 'Open Sans', sans-serif;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   color: #1e88e5;
@@ -2192,6 +2200,3 @@ ul#menu-topo li a {
 
 
 
-
-
-  
