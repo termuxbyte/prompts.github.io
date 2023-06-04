@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0c0c14;
   margin: 0 5vw;
-  border-top: 1vw solid #5c1d1d;
+  /* border-top: 1vw solid #5c1d1d; */
   color: white;
 }
 
@@ -2118,29 +2118,24 @@ ul#menu-topo li a {
 
 
 
-
-
-
-
-
     #contenedor-iframe {
-        position: relative;
-        width: 1500px;
-        height: 380px;
-        overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 38.875em;
+      overflow: hidden;
     }
     
     #contenedor-iframe iframe {
-        position: absolute;
-        top: -8px;  /* Ajusta la posición vertical según tus necesidades */
-        left: -35px;  /* Ajusta la posición horizontal según tus necesidades */
-        width: 1355px;  /* Ajusta el ancho según tus necesidades */
-        height: 600px;  /* Ajusta el alto según tus necesidades */
+      position: absolute;
+      top: 25%;  /* Ajusta la posición vertical según tus necesidades */
+      left: 2.2%;  /* Ajusta la posición horizontal según tus necesidades */
+      width: 95.09%;  /* Ajusta el ancho según tus necesidades */
+      height: 900px;  /* Ajusta el alto según tus necesidades */
     }
 
     #contenedor-iframe2 {
       position: relative;
-      width: 1900px;
+      width: 100%;
       height: 950px;
       overflow: hidden;
   }
@@ -2148,8 +2143,8 @@ ul#menu-topo li a {
   #contenedor-iframe2 iframe {
       position: absolute;
       top: -8px;  /* Ajusta la posición vertical según tus necesidades */
-      left: -35px;  /* Ajusta la posición horizontal según tus necesidades */
-      width: 1355px;  /* Ajusta el ancho según tus necesidades */
+      left: 2.2%;   /* Ajusta la posición horizontal según tus necesidades */
+      width: 95.09%;  /* Ajusta el ancho según tus necesidades */
       height: 900px;  /* Ajusta el alto según tus necesidades */
   }
 
