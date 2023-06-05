@@ -2054,8 +2054,8 @@ ul#menu-topo li a {
 
   #izquierdasvg {
     position: relative;
-    top: 80%;
-    left: -17%; 
+    top: 180%;
+    left: 1%; 
 
  
 
@@ -2063,15 +2063,15 @@ ul#menu-topo li a {
 
   #derechasvg {
     position: relative;
-    top: 80%;
-    left: 104%;
+    top: 180%;
+    left: 90%;
 
 
   }
 
   div svg {
     width: 50px;
-   ;
+   
     height: auto;
     margin: 10  8rem;
     cursor: pointer;
@@ -2121,13 +2121,13 @@ ul#menu-topo li a {
     #contenedor-iframe {
       position: relative;
       width: 100%;
-      height: 38.875em;
+      height: 12.875em;
       overflow: hidden;
     }
     
     #contenedor-iframe iframe {
       position: absolute;
-      top: 25%;  /* Ajusta la posición vertical según tus necesidades */
+      top: -95%;  /* Ajusta la posición vertical según tus necesidades */
       left: 2.2%;  /* Ajusta la posición horizontal según tus necesidades */
       width: 95.09%;  /* Ajusta el ancho según tus necesidades */
       height: 900px;  /* Ajusta el alto según tus necesidades */

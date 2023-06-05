@@ -2,6 +2,7 @@
 
 .menu {
   margin: 0px 0;
+  
 }
 .menu > ol {
   list-style: none;
@@ -88,17 +89,41 @@
 }
 .menu > ol .sub-menu {
   border-left: 1px solid #FBFBFB;
-  margin-left: 22.5px;
   list-style: none;
   max-height: 0px;
   overflow: hidden;
   padding-left: 7.5px;
-  position: relative;
-  transition: .5s;
+  position: absolute;
+  top: 100%;
+  left: 0;
   z-index: 1;
+  transition: .5s;
+  background: #3c3c3c; /* Color de fondo deseado */
 }
+
+.menu > ol .sub-menu li:nth-child(1) {
+  --sub-menu-color: #FE90AF; /* Color de fondo para el primer elemento */
+}
+
+.menu > ol .sub-menu li:nth-child(2) {
+  --sub-menu-color: #FE90AF; /* Color de fondo para el segundo elemento */
+}
+
+/* Agrega estilos adicionales para los demás elementos */
+
+.menu > ol .sub-menu li {
+  background: var(--sub-menu-color); /* Aplica el color de fondo utilizando la variable */
+  /* Otros estilos para los elementos del submenú */
+}
+
+
+/* Agrega estilos adicionales para los demás elementos */
+
+
+
 .menu > ol .sub-menu li {
   font-size: .9em;
+  
 }
 .menu > ol .sub-menu li:hover,
 .menu > ol .sub-menu li a:focus {
@@ -107,10 +132,12 @@
 .menu > ol .sub-menu li a:after {
   bottom: 5px;
   height: 1px;
+  
 }
 .menu > ol .sub-menu li a:hover:after,
 .menu > ol .sub-menu li a:focus:after {
   width: 15px;
+  
 }
 @media (min-width: 775px) {
   a:focus,
