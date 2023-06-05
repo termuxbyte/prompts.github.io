@@ -2121,31 +2121,31 @@ ul#menu-topo li a {
     #contenedor-iframe {
       position: relative;
       width: 100%;
-      height: 12.875em;
+      height: 20.875em;
       overflow: hidden;
     }
     
     #contenedor-iframe iframe {
       position: absolute;
-      top: -95%;  /* Ajusta la posición vertical según tus necesidades */
-      left: 2.2%;  /* Ajusta la posición horizontal según tus necesidades */
-      width: 95.09%;  /* Ajusta el ancho según tus necesidades */
-      height: 900px;  /* Ajusta el alto según tus necesidades */
+      top: -75%;  /* Ajusta la posición vertical según tus necesidades */
+      left: -8.2%;  /* Ajusta la posición horizontal según tus necesidades */
+      width: 120.09%;  /* Ajusta el ancho según tus necesidades */
+      height: 1200px;  /* Ajusta el alto según tus necesidades */
     }
 
     #contenedor-iframe2 {
       position: relative;
       width: 100%;
-      height: 950px;
+      height: 845px;
       overflow: hidden;
   }
   
   #contenedor-iframe2 iframe {
       position: absolute;
       top: -8px;  /* Ajusta la posición vertical según tus necesidades */
-      left: 2.2%;   /* Ajusta la posición horizontal según tus necesidades */
-      width: 95.09%;  /* Ajusta el ancho según tus necesidades */
-      height: 900px;  /* Ajusta el alto según tus necesidades */
+      left: -8.2%;  /* Ajusta la posición horizontal según tus necesidades */
+      width: 120.09%;  /* Ajusta el ancho según tus necesidades */
+      height: 1200px;  /* Ajusta el alto según tus necesidades */
   }
 
 
