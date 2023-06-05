@@ -78,7 +78,7 @@
         </svg>
   
       </div>
-<div class="search-results1">
+<div id="search-results1">
 
       <ul id="search-results"></ul>
 
@@ -342,6 +342,13 @@
 </section>
 
 </header>
+<!-- modales -->
+
+<div id="aviso-modal" class="modal">
+  <div class="modal-content">
+    <p>su texto ha sido copiado correctamente <br> ir a pegar a ChatGPT</b></p>
+  </div>
+</div>
 
 
 
@@ -364,29 +371,34 @@
 		<p  class="texto-ejemplo">
       Voy a proporcionarte comandos y necesito que respondas con la salida que debería mostrar la terminal. Por favor, responde solo con la salida del terminal dentro de un bloque de código único, sin añadir explicaciones ni escribir comandos a menos que se te indique específicamente. Si necesito comunicarme contigo en inglés, lo haré colocando el texto entre corchetes. Empezaremos con el primer comando: <span class="completar-placeholder">{pwd}.</span> <span class="completar-placeholder"></span>
 		</p>
+
     <div class="completar-inputs">
-		  <input type="text" class="completar-input" placeholder="Aqui tu texto"> 
+		  <input type="text" id="mi-input"  class="completar-input" placeholder="Aqui tu texto"> 
+      
+			</div>	  
 
 
 
       
-			</div>	  
-		<button onclick="completarTexto()">Completar <i class="fas fa-check"></i>
+		<button onclick="completarTexto()" id="mi-boton-completar">Completar <i class="fas fa-check"></i>
     </button>
-		<button onclick="copiarTexto()">Copiar <i class="far fa-copy"></i></button>
+		<button onclick="copiarTexto()" id="mi-boton-copiar">Copiar <i class="far fa-copy"></i></button>
+
+
+
     <div class="share-btn-container">
       <button class="share-btn"><i class="fas fa-share"></i> Compartir</button>
       <div class="share-options">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" class="facebook" target="_blank">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://prompts.uno/" class="facebook" target="_blank">
           Facebook <i class="fab fa-facebook"></i>
         </a>        
-        <a href="https://www.instagram.com/sharer.php?u=https://example.com" class="instagram" target="_blank">
+        <a href="https://www.instagram.com/sharer.php?u=http://prompts.uno/" class="instagram" target="_blank">
           Instagram <i class="fab fa-instagram"></i>
         </a>
-                     <a href="https://api.whatsapp.com/send?text=Texto%20de%20ejemplo" class="whatsapp" target="_blank">
+        <a href="https://whatsapp.com/send?text=http://prompts.uno/index.html" target="_blank" rel="noopener noreferrer">
           WhatsApp <i class="fab fa-whatsapp"></i>
         </a>        
-        <a href="https://telegram.me/share/url?url=https://example.com&text=Compartir%20contenido%20en%20Telegram" class="telegram" target="_blank">
+        <a href="https://telegram.me/share/url?url=http://prompts.uno/&text=Compartir%20contenido%20en%20Telegram" class="telegram" target="_blank">
           Telegram <i class="fab fa-telegram"></i>
         </a>
         
@@ -412,7 +424,7 @@
     <br>        		
 		<div  id="contenido" class="texto-completado"></div>
     
-      <button id="botonDescargar" class="buttondescargar">
+    <button id="botonDescargar" class="buttondescargar">
       <div class="icon">
           <svg viewBox="0 0 14 15">
               <line x1="5" y1="13" x2="5" y2="1"></line>

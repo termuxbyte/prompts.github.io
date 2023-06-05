@@ -57,7 +57,17 @@ window.addEventListener('load', function() {
   });
 
 
-
+  const boton = document.getElementById('mi-boton-copiar');
+  const modal = document.getElementById('aviso-modal');
+  
+  boton.addEventListener('click', function() {
+    modal.style.display = 'block';
+    
+    setTimeout(function() {
+      modal.style.display = 'none';
+    }, 1000); // Ocultar el aviso después de 3 segundos
+  });
+  
 
 
   const tipButtons = document.querySelectorAll('.tip-button')
