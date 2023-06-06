@@ -558,35 +558,38 @@ pre {
 
   
   
-
-  
-  .containerw {
-    position: absolute;
-    left: 32%;
-    top: 25%;
+  .container {
+    position: relative;
   }
-
-.searchContainer{
+  
+  .menu {
+    position: relative;
+    z-index: 999;
+    /* Estilos adicionales para el menú */
+  }
+  
+  .searchContainer {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
-    position: relative;
-}
-
-.searchContainer input{
+  }
+  
+  .searchContainer input {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5rem;
-    padding:5px 15px;
-    height:10%;
-    width:400px;
+    padding: 5px 15px;
+    height: 10%;
+    width: 400px;
     border-radius: 10px;
     outline: none;
     border: 0;
-    color:rgb(38, 36, 36);
+    color: rgb(38, 36, 36);
     animation: inputAnimation 11s linear infinite;
-}
-
-
-
+  }
+  
 
 
 .message i{
@@ -1524,55 +1527,48 @@ a:hover {
 
 
 #post-body {
-  
   margin: 0 1% 0 1%;
   padding: 1%;
   border-bottom: 10px solid #bb8f85;
   background: #363741;
   text-align: justify;
+  position: relative;
 }
-
 
 #post-body img {
-  max-width: 15%;
-  min-width: 15%;
+  max-width: 10vw; /* Utilizando viewport units para el ancho máximo */
+  min-width: 10vw; /* Utilizando viewport units para el ancho mínimo */
   margin: 1% 0 0 1%;
-
   border-radius: 100%;
 }
-
 ul#menu-topo {
   margin: 0 auto;
   padding: 10px 0;
-
   list-style-type: none;
-
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   text-align: center;
   text-transform: uppercase;
+  position: relative;
+  z-index: 999;
 }
 
 ul#menu-topo li {
   display: inline;
-
   margin: 0;
 }
 
 ul#menu-topo li a {
   display: inline-block;
-
   margin-right: 10px;
   margin-left: 10px;
   padding: 4px 10px;
-
   text-decoration: none;
 }
 
 .nav-toggle {
   display: none;
 }
-
 
 
 

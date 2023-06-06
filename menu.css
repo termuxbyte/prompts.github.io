@@ -2,7 +2,7 @@
 
 .menu {
   margin: 0px 0;
-  
+  z-index: 999;
 }
 .menu > ol {
   list-style: none;
