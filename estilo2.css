@@ -1,12 +1,32 @@
 
+.content {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+}
+
+@media (max-width: 774px) {
+  /* Estilos para pantallas menores a 775px */
   .content {
-    position: absolute;
-    top: 17%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 160px;
-    
+    /* Estilos específicos para pantallas más pequeñas */
+    /* Por ejemplo: */
+    top: 8%;
+    height: 120px;
   }
+}
+
+@media (min-width: 775px) {
+  /* Estilos para pantallas mayores o iguales a 775px */
+  .content {
+    /* Estilos específicos para pantallas más grandes */
+    /* Por ejemplo: */
+    top:20%;
+    height: 160px;
+  }
+}
+
   
   .content__container {
     font-weight: 600;

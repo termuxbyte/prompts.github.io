@@ -36,7 +36,7 @@ html {
 
 .content2 {
   position: relative;
-  font-size: 1vw; /* Utilizando unidades de viewport (vw) */
+  font-size: 12px;
   text-align: center;
 }
 
@@ -161,16 +161,16 @@ textarea {
 
 
   .portada {
-    height: 45vh; /* Utilizando unidades de viewport (vh) */
+    height: 25rem;
     background: linear-gradient(to bottom, #141e30, #243b55);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-image: url('portada.jpg');
-    background-size: cover; /* Ajusta el tamaño de la imagen de fondo para cubrir todo el contenedor */
+    background-size: 1300px; /* ajusta el tamaño de la imagen de fondo para cubrir todo el contenedor */
+    
   }
-  
   
   .portada h1 {
     font-size: 8rem;
@@ -571,7 +571,7 @@ pre {
   .searchContainer {
     position: absolute;
     left: 50%;
-    top: 16%;
+    top: 4%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -1869,7 +1869,7 @@ ul#menu-topo li a {
   height: 20vh;
   position: absolute;
   top: 28%;
-  left: 48%;
+  left: 45%;
   transform: translate(-50%, -50%);
   overflow: hidden;
   z-index: 9999;
@@ -1887,10 +1887,6 @@ ul#menu-topo li a {
   font-size: 2.5vw;
   position: relative;
 }
-
-
-
-
 
 
 
