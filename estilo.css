@@ -33,7 +33,7 @@ html {
 
 button {
   font-size: 28px !important; /* Tamaño de fuente deseado con !important */
-  padding: 10px 25px !important; /* Espacio alrededor del texto deseado con !important */
+  padding: 10px 20px !important; /* Espacio alrededor del texto deseado con !important */
   font-family: "Arial", sans-serif !important; /* Estilo de letra deseado */
 }
 
