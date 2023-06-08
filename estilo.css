@@ -31,6 +31,12 @@ html {
 
 }
 
+button {
+  font-size: 25px !important; /* Tamaño de fuente deseado con !important */
+  padding: 10px 25px !important; /* Espacio alrededor del texto deseado con !important */
+  font-family: "Arial", sans-serif !important; /* Estilo de letra deseado */
+}
+
 
 
 
@@ -571,7 +577,7 @@ pre {
   .searchContainer {
     position: absolute;
     left: 50%;
-    top: 4%;
+    top: 10%;
     transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
@@ -2140,8 +2146,8 @@ ul#menu-topo li a {
   #contenedor-iframe2 iframe {
       position: absolute;
       top: -8px;  /* Ajusta la posición vertical según tus necesidades */
-      left: -8.2%;  /* Ajusta la posición horizontal según tus necesidades */
-      width: 120.09%;  /* Ajusta el ancho según tus necesidades */
+      left: -6%;  /* Ajusta la posición horizontal según tus necesidades */
+      width: 116.09%;  /* Ajusta el ancho según tus necesidades */
       height: 1200px;  /* Ajusta el alto según tus necesidades */
   }
 
