@@ -20,29 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
 window.addEventListener('load', function() {
   // Obtener el botón y el div con el contenido
   const botonDescargar = document.getElementById('botonDescargar');
@@ -95,89 +72,6 @@ window.addEventListener('load', function() {
 
   
 
-
-
-// Obtén los elementos necesarios
-const tourContainer = document.querySelector('.tour');
-const tourTitle = document.querySelector('.tour-title');
-const tourContent = document.querySelector('.tour-content');
-const nextButton = document.querySelector('.next-button');
-const postBody = document.querySelector('#post-body');
-
-// Define los pasos del tour
-const tourSteps = [
-  {
-    title: 'Título 1',
-    content: 'Contenido 1'
-  },
-  {
-    title: 'Título 2',
-    content: 'Contenido 2'
-  },
-  {
-    title: 'Título 3',
-    content: 'Contenido 3'
-  },
-  {
-    title: 'Título 4',
-    content: 'Contenido 4'
-  },
-  {
-    title: 'Título 5',
-    content: 'Contenido 5'
-  }
-];
-
-// Mantén un registro del paso actual
-let currentStep = 0;
-
-// Función para mostrar el siguiente paso del tour
-function showNextStep() {
-  if (currentStep < tourSteps.length) {
-    const step = tourSteps[currentStep];
-    tourTitle.textContent = step.title;
-    tourContent.textContent = step.content;
-    tourContainer.style.display = 'block';
-    currentStep++;
-
-    // Aumenta el tamaño del div del tour al hacer clic
-    if (currentStep === 1) {
-      tourContainer.style.height = '200px';
-    } else if (currentStep === 2) {
-      tourContainer.style.height = '250px';
-    } else if (currentStep === 3) {
-      tourContainer.style.height = '300px';
-    } else if (currentStep === 4) {
-      tourContainer.style.height = '350px';
-    } else if (currentStep === 5) {
-      tourContainer.style.height = '400px';
-    }
-
-    // Oculta el paso anterior
-    if (currentStep > 1) {
-      const previousStep = tourSteps[currentStep - 2];
-      const previousStepTitle = previousStep.title;
-      const previousStepContent = previousStep.content;
-
-      const previousStepElement = document.querySelector(`[data-step="${previousStepTitle}"]`);
-      previousStepElement.style.display = 'none';
-    }
-  } else {
-    tourContainer.style.display = 'none';
-  }
-}
-
-// Asocia el evento de clic al botón "Siguiente"
-nextButton.addEventListener('click', showNextStep);
-
-// Detecta si el div "post-body" está en pantalla
-function handleScroll() {
-  const rect = postBody.getBoundingClientRect();
-  if (rect.top <= window.innerHeight * 0.5 && rect.bottom >= window.innerHeight * 0.5) {
-    showNextStep();
-    window.removeEventListener('scroll', handleScroll);
-  }
-}
 
 window.addEventListener('scroll', handleScroll);
 
