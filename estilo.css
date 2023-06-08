@@ -348,7 +348,7 @@ pre {
   }
   
   .texto-ejemplo {
-  font-size: 16px;
+  font-size: 126%;
   line-height: 1.5;
   margin-bottom: 20px;
   }
@@ -362,6 +362,7 @@ pre {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+
   
   }
   
@@ -998,10 +999,11 @@ pre {
         writing-mode: vertical-rl;
         /* establece la posición del elemento */
         position: absolute;
-        top: 35%;
+        top: 34%;
         left:12%;
         /* centra el elemento */
         transform: translate(-50%, -50%);
+        font-size: 80%;;
       }
       
 
