@@ -20,6 +20,29 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
 window.addEventListener('load', function() {
   // Obtener el botón y el div con el contenido
   const botonDescargar = document.getElementById('botonDescargar');

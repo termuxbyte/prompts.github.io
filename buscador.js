@@ -183,6 +183,15 @@ searchInput.addEventListener('input', event => {
   } else {
     searchResults.innerHTML = '';
   }
+
+
+
+
+
+
+
+
+  
 });
 
 

@@ -2076,3 +2076,50 @@ ul#menu-topo li a {
     color: #fff; /* Cambia el color del texto si es necesario */
   }
   
+
+
+  
+
+
+  .banner {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    padding: 5vw;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    color: #FF5F6D;
+    font-size: 3vw;
+    font-family: 'Pacifico', cursive;
+    text-transform: uppercase;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: neonGlow 10s linear infinite;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+  }
+  
+  .banner h1::before {
+    content: "\2764";
+    display: inline-block;
+    font-size: 2.5vw;
+    margin-right: 5px;
+  }
+  
+  @keyframes neonGlow {
+    0% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 10px #028712, 0 0 20px #000000, 0 0 30px #a4dc0a;
+    }
+    100% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
